@@ -1,0 +1,9 @@
+JOB Data_Preprocessing Prepro.sub
+JOB EDA EDA.sub
+JOB Model Model.sub
+JOB Evaluation Evaluation.sub
+
+PARENT Data_Preprocessing CHILD EDA
+PARENT Data_Preprocessing CHILD Model
+PARENT Data_Preprocessing CHILD Evaluation
+PARENT Model CHILD Evaluation
